@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+
+p {
+   font-family: "Oswald",'Arial', sans-serif;
+    font-size: 18px;
+}
+
+a {
+     font-family: "Oswald",'Arial', sans-serif;
+    font-size: 15px;
+}
+
+ul {}
+
+ol {}
+
+li {}
+
+img {
+    width: 25%;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header {
+    padding: 6rem 2rem;
+    color: black;
+    background-image: url("/img/project.jpg");
+    image-orientation: center;
+    overflow: auto;
+    float: none;
+    border-top: 15px solid gold;
+    background-color: lightgrey;  
+}
+
+header > h1 {
+    color: whitesmoke;
+    font-family: "Oswald",'Arial', sans-serif;
+}
+
+header > h2 {
+    color: darkgray;
+    font-family: "Oswald",'Arial', sans-serif;
+}
+
+/*************************************************
+            NAVMENU
+*************************************************/
+nav {
+    padding: 1rem 2rem;
+    background-color: gray;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav > a,
+nav > a:visited,
+nav > a:link {
+    
+    color: black;
+    font-family: "Oswald",'Arial', sans-serif;
+    
+}
+
+nav > a:active,
+nav > a:focus,
+nav > a:hover {
+    text-decoration-color: chartreuse;
+    color: chartreuse;
+    font-family: "Oswald",'Arial', sans-serif;
+    
+}
+
+/************************************************* 
+            MAIN CONTENT
+*************************************************/
+  main {
+    padding: 1rem 2rem;
+    display: flex;
+flex-direction: row;
+    
+}
+
+section {
+    clear: both;
+    overflow: auto;
+    font-family: "Oswald",'Arial', sans-serif;
+
+}
+
+section p {
+padding: 2rem;
+  font-family: "Oswald",'Arial', sans-serif; 
+}
+
+section p img {
+    width: 400px;
+}
+section h1 {
+        padding: 1.5rem;
+    color: gold;
+    }
+    section h2{
+       padding: 1.5rem; 
+        color: gold;
+    }
+    section h3{
+        padding: 1.5rem;
+        color: gold;
+    }
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 15px solid gold;
+    background-color: gray;
+}
+
+.foot nav {
+    padding: 1rem 1rem;
+    background-color: gray;
+    display: flex;
+    align-content: space-between;
+    clear: both;
+    overflow: auto;
+}
+
+.foot section {
+    background-color: gray;
+    padding: 1rem 2rem;
+
+}
+
+.foot dl {
+
+    padding: 0rem 5rem;
+background-color: gray;
+}
+
+.foot dt {
+
+    padding: 0rem 5rem;
+    color: aqua;
+    font-family: sans-serif;
+
+}
+
+.foot dd {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 3rem;
+    background-color: gray;
+    font-family: "Oswald",'Arial', sans-serif;
+}
+
+.foot dd a,
+.foot dd a:visited {
+    color: black;
+}
+
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover {
+    text-decoration-color: chartreuse;
+    color: chartreuse;
+}
+
+.form-box input {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-box select {
+    width: 100px;
+    height: 25px;
+}
+
+.form-box textarea {
+    width: 350px;
+    height: 100px;
+}
+
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px) {
+    header {
+    padding: 6rem 2rem;
+    color: black;
+    background-image: url("/img/project.jpeg");
+    image-orientation: center;
+    overflow: auto;
+    float: none;
+    border-top: 15px solid green;
+    background-color: lightgrey;
+}
+
+    main {
+        padding: 1rem 2rem;
+        
+    display: flex;
+        flex-direction: column;
+   
+        
+    }
+    nav {
+    padding: 0rem 2rem;
+    background-color: gray;
+     display: flex;
+    justify-content: space-between;
+    
+}
+    .mainnav{
+        display: flex;
+        flex-direction:column;
+    }   
+nav > a:link {
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    
+}
+nav > a:hover {
+   border-bottom: 1px solid green;
+  text-decoration: none;
+
+    }
+
+
+    footer {
+        padding: 0rem 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+       border-top: 15px solid green;
+        background-color: gray;
+    }
+
+    .subnav dl {
+        padding: 0rem 0rem;
+    }
+section p {
+padding: 0.5rem 0.5rem;
+  font-family: "Oswald",'Arial', sans-serif; 
+}
+
+section p img {
+    width: 150px;
+}
+section h1 {
+        padding: 1.5rem;
+        color: green;
+    }
+    section h2{
+       padding: 1.5rem; 
+        color: green;
+    }
+    section h3{
+        padding: 1.5rem;
+        color: green;
+    }
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+    header {
+    padding: 6rem 2rem;
+    color: black;
+    background-image: url("/img/project.jpeg");
+    image-orientation: center;
+    overflow: auto;
+    float: none;
+    border-top: 15px solid blue;
+    background-color: lightgrey;
+}
+    
+    footer {
+        background-color: gray;
+        display: flex;
+        flex-direction: column-reverse;
+        border-top: 15px solid blue;
+    }
+
+    .form-box input {
+       
+        width: 900px;
+    }
+
+    .form-box select {
+        width: 150px;
+        height: 25px;
+    }
+
+    .form-box textarea {
+        width: 900px;
+        height: 100px;
+    }
+
+    .foot section {
+        background-color: grey;
+        }
+
+    .primary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "first first"  "second third";
+        margin: 1.5rem;
+    }
+    
+    section p {
+padding: 2.5rem;
+  font-family: "Oswald",'Arial', sans-serif; 
+}
+
+    section p img {
+        float:left;
+        width: 300px;
+        
+}
+    .primary .first.segment image{
+        float: left;
+    }
+    .first.segment {
+/*        grid-area:*/
+        padding: 1rem;
+        grid-area: first;
+      
+    }
+   
+        
+    .second.section.minor-segment {
+        grid-area: second;
+        padding: 1rem;
+    }
+
+    .third.segment.minor-segment {
+        grid-area: third;
+        padding: 1rem;
+    }
+    section h1 {
+        padding: 1.5rem;
+        color: blue;
+    }
+    section h2{
+       padding: 1.5rem;
+        color: blue;
+    }
+    section h3{
+        padding: 1.5rem;
+        color: blue;
+    }
+.foot nav {
+    padding: 1rem 1rem;
+    background-color: gray;
+    display: flex;
+    align-content: space-between;
+    clear: both;
+    overflow: auto;
+}
+}
+}
+
+@media (min-width: 1000px) {
+   footer {
+    
+    display: flex;
+    justify-content: space-between;
+          
+}
+
+    .form-box input {
+        width: 350px;
+        
+    }
+    main {
+    padding: 1rem 2rem;
+    display: flex;
+flex-direction: row;
+    
+}
+    
+}
